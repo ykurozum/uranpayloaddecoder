@@ -10,6 +10,6 @@ import java.util.List;
  */
 public interface PayloadDecoder {
 
-	public List<DecodedPayload> encode(List<EncodedPayload> encodedPayloadList) throws Exception;
+	public List<DecodedPayload> decode(List<EncodedPayload> encodedPayloadList) throws Exception;
 
 }
