@@ -6,19 +6,18 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 public class DecodedPayload {
 	/**
-	 * EncodedPayload�œn���ꂽ����
+	 * EncodedPayload
 	 */
 	Date time;
 	/**
-	 * payload���̃f�[�^���̂��\������̎��ԁi�ʏ�̓f�[�^�̍̎掞���j�B�����ꍇ��null
+	 * 
 	 */
 	Date payloadTime;
 	/**
-	 * �f�R�[�h�O��payload(�ʏ�͑Ή�����EncodedPayload�̒l���Z�b�g�j
 	 */
 	String payloadString;
 	/**
-	 * payload�f�R�[�h���JSON�i�f�o�C�X��ނɂ���ėl�X�����A�Ⴆ�Ή��L�̂悤��JsonNode�ƂȂ�j 
+	 * payload
 	 * { "protocol": "0c1002",
 	 *   "Longitude": "139.75495999999998",
 	 *   "Latitude": "35.649792999999995",
@@ -29,18 +28,17 @@ public class DecodedPayload {
 	 * }
 	 * 
 	 */
-	JsonNode palyloadJson;
+	JsonNode payloadJson;
 	/**
-	 * �f�o�C�X�̎��ʎq�i�ʏ��EncodedPayload�œn���ꂽ�l�����A�f�R�[�h�ɂ����EncodedPayload����ύX�̉\��������j
 	 */
 	String deviceIdentifiyer;
 
-	public DecodedPayload(Date time, Date payloadTime, String payloadString, JsonNode palyloadJson,
+	public DecodedPayload(Date time, Date payloadTime, String payloadString, JsonNode payloadJson,
 			String deviceIdentifiyer) {
 		this.time = time;
 		this.payloadTime = payloadTime;
 		this.payloadString = payloadString;
-		this.palyloadJson = palyloadJson;
+		this.payloadJson = payloadJson;
 		this.deviceIdentifiyer = deviceIdentifiyer;
 	}
 
@@ -60,12 +58,12 @@ public class DecodedPayload {
 		this.payloadString = payloadString;
 	}
 
-	public JsonNode getPalyloadJson() {
-		return palyloadJson;
+	public JsonNode getPayloadJson() {
+		return payloadJson;
 	}
 
-	public void setPalyloadJson(JsonNode palyload_json) {
-		this.palyloadJson = palyload_json;
+	public void setPayloadJson(JsonNode palyload_json) {
+		this.payloadJson = palyload_json;
 	}
 
 	public String getDeviceIdentifiyer() {
